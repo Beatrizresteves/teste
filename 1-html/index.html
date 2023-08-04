@@ -1,46 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
+    <title>Teste Sapient</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 </head>
 <body>
-    <nav class="menu">
-        <details class="menu-responsive">
-            <summary>Navegação</summary>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </details>
-    </nav>
-    <h1>Olá Mundo!</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio vel odio iaculis tincidunt vel nec quam. Sed varius, felis a tincidunt lobortis, lectus mi dictum orci, non tristique magna arcu et mauris.</p>
-    
-    <table width="100%" border="0" cellpadding="0" cellspacing="0">
-        <tr>
-            <td style="padding: 20px;">
-                <video controls>
-                    <source src="assets/video/video.mp4" type="video/mp4">
-                    Seu navegador não suporta a tag de vídeo.
-                </video>
-            </td>
-        </tr>
-    </table>
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td style="text-align: left; padding: 10px;">
+                    <div id="menu-icon">
+                        <!-- Menu Icon Content -->
+                    </div>
+                    <div id="menu-area">
+                        <details class="menu-responsive">
+                            <summary class="material-symbols-outlined"><span class="material-symbols-outlined">menu</span></summary>
+                            <div class="close-icon">
+                                <a href="index.html" class="material-symbols-outlined">close</a>
+                            </div>
+                            <img src="./assets/img/imagem-2.png" style="border-radius: 50%;" alt="logo">
+                            <ul>
+                                <li><a href="#quemsomos">Quem Somos</a></li>
+                                <li><a href="#trabalheconosco">Trabalhe conosco</a></li>
+                                <li><a href="#pessoas">Pessoas</a></li>
+                                <li><a href="#cases">Cases</a></li>
+                            </ul>
+                            <div id="social-medias">
+                                <img src="./assets/img/instagram.svg" width="25" height="25">
+                                <img src="./assets/img/facebook.svg" width="25" height="25">
+                                <img src="./assets/img/linkedin.svg" width="25" height="25">
+                                <img src="./assets/img/medium.svg" width="25" height="25">
+                            </div>
+                        </details>
+                    </div>
+                </td>
+                <td style="text-align: center; padding: 10px;">
+                    <img src="./assets/img/imagem-2.png" style="border-radius: 50%;" alt="logo">
+                </td>
+                <td style="text-align: right; padding: 10px;">
+                    <div id="search-icon">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+<h1>Olá Mundo!</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio vel odio iaculis tincidunt vel nec quam. Sed varius, felis a tincidunt lobortis, lectus mi dictum orci, non tristique magna arcu et mauris.</p>
 
-    <p>LOREM IPSUM DOLOR SIT AMET,
-        CONSECTETUER VOLUTPAT. UT.
-    </p>
-    <h2>Galeria de Imagens</h2>
-	<div class="slide" style="flex: 0 0 300px;">
-		<span style="font-size: 30px; position: relative; top: -10px;">&#x2190;</span> <!-- Seta para a esquerda -->
-		<img src="assets/img/imagem-1.png" alt="Imagem 1">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="padding: 20px;">
+            <video controls>
+                <source src="assets/video/video.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        </td>
+    </tr>
+</table>
+
+<p>LOREM IPSUM DOLOR SIT AMET,
+    CONSECTETUER VOLUTPAT. UT.
+</p>
+<h2>Galeria de Imagens</h2>
+<div class="slide" style="flex: 0 0 300px;">
+    <span style="font-size: 30px; position: relative; top: -10px;">&#x2190;</span>
+    <!-- Seta para a esquerda -->
+    <img src="assets/img/imagem-1.png" alt="Imagem 1">
+    <!-- Setas -->
+    <span style="font-size: 30px; position: relative; top: -10px;">&#x2192;</span>
+    <!-- Seta para a direita -->
+</div>
+<section class="menu_accordion">
+    <details>
+        <summary>Lorem ipsum dolor sit amet <span>&#x2212;</span></summary>
+        <section>
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                id diam malesuada, consequat ipsum sit amet, sodales turpis.
+            </div>
+        </section>
+    </details>
+    <!-- Add more details sections here -->
+</section>
+
+<section class="partners">
+    <h2>Parceiros</h2>
+    <div class="slide" style="flex: 0 0 300px;">
+        <span style="font-size: 30px; position: relative; top: -10px;">&#x2190;</span>
+        <!-- Seta para a esquerda -->
+        <img src="assets/img/imagem-2.png" alt="Imagem 1">
         <!-- Setas -->
-        <span style="font-size: 30px; position: relative; top: -10px;">&#x2192;</span> <!-- Seta para a direita -->
-	</div>
+        <span style="font-size: 30px; position: relative; top: -10px;">&#x2192;</span>
+        <!-- Seta para a direita -->
+        <figcaption>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <a href="#">Conheça mais</a>
+        </figcaption>
+    </div>
+    <!-- Add more partner slides here -->
+</section>
+
+<section class="contact">
+    <h2>Entre em contato</h2>
+    <form action="">
+        <label for="name">Nome</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="telephone">Telefone</label><br>
+        <input type="tel" id="telephone" name="telephone"><br>
+        <label for="message">Mensagem</label><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+        <button type="button">Enviar</button>
+    </form>
+
+    <footer>
+        <p>
+            Av. Dr. Figueiredo Mascarenhas, 94 <br>
+            Tres Vendas, Pelostas -RS <br>
+            06055-510 <br>
+            <span>(</span>53<span>)</span> 3030-3030
+        </p>
+
+        <ul>
+            <li><a href="#">Vagas</a></li>
+            <li><a href="#">Cases</a></li>
+            <li><a href="#">Sitemap</a></li>
+        </ul>
+    </footer>
+</section>
 </body>
 </html>
