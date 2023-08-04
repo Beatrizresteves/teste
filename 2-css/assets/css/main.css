@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 
+* {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+  }
+  body, h1, h2, h3, h4, h5, h6, p, ul, li, a{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	} 
 body {
 	background-color: #f2f2f2;
 	font-family:Source sans Pro;
 	font-size: 14px;
+	
 }
 #wrapper > #header {
 	position: absolute; /* Adicionamos posicionamento relativo para que os elementos filhos com posicionamento absoluto fiquem posicionados em relação a este elemento */
@@ -29,6 +39,8 @@ body {
 	font-weight: 700;
     color: #3C3B3B;
 	border-right: 2px solid #E1E1E1;
+
+    margin-left: 26px;
 }
 .links_item {
 	border-right: 2px solid #E1E1E1;
@@ -82,6 +94,10 @@ body {
     margin-left: 50px;
 }
 
+.post .image {
+	margin-left: 4%;
+}
+
 .title a {
 	font-size: 28px;
     color: #3C3B3B;
@@ -117,7 +133,7 @@ body {
 	width: 46px;
 	height: 46px;
 	border-radius: 50%;
-    margin-left: 105%;
+    margin-left: 89%;
     margin-top: -29%;
 	width: 46px;
 
@@ -178,7 +194,7 @@ body {
 }
 
 #sidebar {
-	margin-right: 40px;
+	margin-right: 20px;
 	margin-left: 60px;
 	margin-top: 100px;
 	text-transform: uppercase;
@@ -189,13 +205,17 @@ body {
 }
 .post > .paragraph {
     text-transform: capitalize;
+	margin-left: 4%;
+    margin-right: 4%;
+	color: #3C3B3B;
 }
 
 .button {
-	padding: 10px;
+	padding: 14px;
     border: 1px solid #EEEEEE;
 	color: #3C3B3B;
 	font-weight: bold;
+	margin-left: 3%;
 }
 
 .posts > span > div {
@@ -212,3 +232,13 @@ body {
     font-weight: 100;
 }
 
+.posts .header {
+	margin-left: 8px;
+    display: inline-grid;
+}
+
+.blurb .paragraph {
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	text-align: justify;
+}
