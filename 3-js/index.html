@@ -68,3 +68,10 @@
   <script src="assets/js/main.js" async></script>
 </body>
 </html>
+<script>
+  function menu_OnClick(menu) {
+                document.getElementById('clickMenuLabel').innerHTML = oItemMenu.text;
+                document.getElementById('clickMenuImg').src = (oItemMenu.image == null || oItemMenu.image == '' ? 'Nulo.png' : oItemMenu.image);
+            }
+
+</script>

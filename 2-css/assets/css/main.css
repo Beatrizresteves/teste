@@ -8,6 +8,7 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	width: 100%;
 	} 
 body {
 	background-color: #f2f2f2;
@@ -215,7 +216,12 @@ body {
     border: 1px solid #EEEEEE;
 	color: #3C3B3B;
 	font-weight: bold;
+	width: 168px;
 	margin-left: 3%;
+}
+
+.actions .disabled {
+	color:#E1E1E1;
 }
 
 .posts > span > div {
@@ -241,4 +247,18 @@ body {
 	text-transform: capitalize;
 	letter-spacing: 1px;
 	text-align: justify;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+	.links_item {
+		opacity: 0;
+	}
+	#wrapper {
+		display: inline-block;
+	}
+	.mini-posts {
+		display: flex;
+    	flex-wrap: wrap;
+}
+	}
 }
