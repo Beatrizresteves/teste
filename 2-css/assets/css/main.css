@@ -1,264 +1,359 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
 
 * {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-  }
-  body, h1, h2, h3, h4, h5, h6, p, ul, li, a{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	width: 100%;
-	} 
-body {
-	background-color: #f2f2f2;
-	font-family:Source sans Pro;
-	font-size: 14px;
-	
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+}
+
 #wrapper > #header {
-	position: absolute; /* Adicionamos posicionamento relativo para que os elementos filhos com posicionamento absoluto fiquem posicionados em relação a este elemento */
-	width: 100%;
-    height: 64px;
-    color: #828282;
-    text-transform: uppercase;
-	display: flex;
-    gap: 20px;
-	align-items: center;
-	border-bottom: #E1E1E1 1px solid;
-	letter-spacing: 4.2px;	
-	align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  color: #828282;
+  text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: #e1e1e1 1px solid;
+  letter-spacing: 4.2px;
 }
 
 #header > span {
-	top: 22px;
-	left: 721px;
-	opacity: 1;
+  top: 22px;
+  left: 721px;
+  opacity: 1;
 }
 
 .main_title {
-	font-weight: 700;
-    color: #3C3B3B;
-	border-right: 2px solid #E1E1E1;
-
-    margin-left: 26px;
+  font-weight: 700;
+  color: #3c3b3b;
+  border-right: 2px solid #e1e1e1;
+  margin-left: 26px;
 }
-.links_item {
-	border-right: 2px solid #E1E1E1;
 
+.links_item {
+  border-right: 2px solid #e1e1e1;
 }
 
 .links_item > a {
-	margin-right: 10px;
+  margin-right: 10px;
 }
-  #header > * {
-	display: inline-block; /* ou 'inline' */
-	vertical-align: middle; /* alinha os elementos verticalmente ao centro */
-  }
-  
-  .links_item {
-	margin-right: 15px; /* adicione margem para espaçamento entre os itens */
-  }
-  
-  .menu {
-	position: absolute;
-	top: 10px; /* ajuste a distância do topo conforme necessário */
-	right: 10px; /* ajuste a distância da direita conforme necessário */
-  }
-  
-  /* Se você estiver usando ícones com a classe "fa-bars" de alguma biblioteca, aplique estilos relevantes para exibi-los corretamente. */
+
+#header > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.links_item {
+  margin-right: 15px;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 #wrapper {
-	display: flex;
-	flex-direction: row-reverse;
-} 
+  display: flex;
+  flex-direction: row-reverse;
+}
 
 #main {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #main > .post {
-	margin-top: 100px;
-	text-transform: uppercase;
-	background-color: white;
-	margin-right: 60px;
-    width: 925px;
+  margin-top: 100px;
+  text-transform: uppercase;
+  background-color: white;
+  margin-right: 60px;
+  width: 90%;
+}
+
+#main > .post .image img {
+  width: 92%;
 }
 
 .post {
-	align-self: flex-end;
-	padding: 40px;
+  align-self: flex-end;
+  padding: 40px;
 }
 
 .post > .header {
-	margin-right: 50px;
-    margin-left: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .post .image {
-	margin-left: 4%;
+  margin-left: 4%;
 }
 
 .title a {
-	font-size: 28px;
-    color: #3C3B3B;
-    font-weight: bold;
-	letter-spacing: 6px;
+  font-size: 28px;
+  color: #3c3b3b;
+  font-weight: bold;
+  letter-spacing: 6px;
 }
+
 .paragraph {
-	color: #8E8E8E;
-	margin-top: 20px;
-	letter-spacing: 2.2px;
+  color: #8e8e8e;
+  margin-top: 20px;
+  letter-spacing: 2.2px;
 }
 
 .published {
-	color: #3C3B3B;
-	font-weight: bold;
+  color: #3c3b3b;
+  font-weight: bold;
 }
-.author{
-	color: #8E8E8E;
+
+.author {
+  color: #8e8e8e;
 }
+
 .author > img {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .meta {
-	display: grid;
-    align-items: baseline;
-    justify-content: flex-end;
-    margin-top: -50px;
-	text-align: center;
-	margin-bottom: 80px;
+  display: grid;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-top: -50px;
+  text-align: center;
+  margin-bottom: 80px;
 }
-.meta > a > img {
-	width: 46px;
-	height: 46px;
-	border-radius: 50%;
-    margin-left: 89%;
-    margin-top: -29%;
-	width: 46px;
 
+.meta > a > img {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-left: 89%;
+  margin-top: -29%;
+  width: 46px;
 }
+
 .meta > .published {
-	margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .meta > .author {
-	margin-right: 45px;
-    text-decoration: underline;
+  margin-right: 45px;
+  text-decoration: underline;
 }
+
 .mini-post {
-	background-color: white;
-	display: flex;
-    flex-direction: column-reverse;
-	margin-bottom: 40px;
-	width: 351px;
-    height: 296px;
-	justify-content: flex-end;
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 40px;
+  width: 351px;
+  height: 296px;
+  justify-content: flex-end;
 }
+
 .mini-post > .header {
-	display: contents;
+  display: contents;
 }
 
-.mini-post > .header > .published { 
-	/* Altera a ordem do elemento para que ele apareça abaixo dos outros em telas menores */
-    margin-bottom: 5px; /* Adiciona margem abaixo para separar o published */
-	margin-left: 25px;
-	margin-bottom: -50px;
-	font-size: 12px;
-	color: #808080;
-}
-.mini-post > .header > .author { /* Altera a ordem do elemento para que ele apareça abaixo dos outros em telas menores */
-	margin-left: 280px;
-    margin-top: 23px;
+.mini-post > .header > .published {
+  margin-bottom: 5px;
+  margin-left: 25px;
+  margin-bottom: -50px;
+  font-size: 12px;
+  color: #808080;
 }
 
-.mini-post > .header > .author > img { /* Altera a ordem do elemento para que ele apareça abaixo dos outros em telas menores */
-	width: 46px;
-	height: 46px;
+.mini-post > .header > .author {
+  margin-left: 280px;
+  margin-top: 23px;
 }
+
+.mini-post > .header > .author > img {
+  width: 46px;
+  height: 46px;
+}
+
 .tertiary_title {
-	flex: 1;
-    margin-left: 25px;
-	color: #3C3B3B;
-	letter-spacing: 2px;
-	
-  }
-
+  flex: 1;
+  margin-left: 25px;
+  color: #3c3b3b;
+  letter-spacing: 2px;
+}
 
 .author img {
-	vertical-align: middle;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	flex: 1;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex: 1;
 }
 
 #sidebar {
-	margin-right: 20px;
-	margin-left: 60px;
-	margin-top: 100px;
-	text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 60px;
+  margin-top: 100px;
+  text-transform: uppercase;
 }
+
 .actions {
-	margin-top: 34px;
-    margin-left: 10px;
+  margin-top: 34px;
+  margin-left: 10px;
 }
+
 .post > .paragraph {
-    text-transform: capitalize;
-	margin-left: 4%;
-    margin-right: 4%;
-	color: #3C3B3B;
+  text-transform: capitalize;
+  margin-left: 4%;
+  margin-right: 4%;
+  color: #3c3b3b;
+}
+
+.post .image {
+  width: 90%;
 }
 
 .button {
-	padding: 14px;
-    border: 1px solid #EEEEEE;
-	color: #3C3B3B;
-	font-weight: bold;
-	width: 168px;
-	margin-left: 3%;
+  padding: 14px;
+  border: 1px solid #eeeeee;
+  color: #3c3b3b;
+  font-weight: bold;
+  width: 168px;
+  margin-left: 3%;
 }
 
 .actions .disabled {
-	color:#E1E1E1;
+  color: #e1e1e1;
 }
 
 .posts > span > div {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-	height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  height: 100px;
 }
 
 .posts .published {
-	margin-left: 23px;
-    color: #808080;
-    font-size: 12px;
-    font-weight: 100;
+  margin-left: 23px;
+  color: #808080;
+  font-size: 12px;
+  font-weight: 100;
 }
 
 .posts .header {
-	margin-left: 8px;
-    display: inline-grid;
+  margin-left: 8px;
+  display: inline-grid;
 }
 
 .blurb .paragraph {
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	text-align: justify;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-	.links_item {
-		opacity: 0;
-	}
-	#wrapper {
-		display: inline-block;
-	}
-	.mini-posts {
-		display: flex;
-    	flex-wrap: wrap;
+@media screen and (max-width: 1000px) {
+  .links_item {
+    opacity: 0;
+  }
+
+  #wrapper {
+    display: inline-block;
+  }
+
+  .mini-posts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .meta {
+    margin-top: 4%;
+  }
+
+  .header .title {
+    text-align: center;
+  }
+
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .posts span {
+    width: 250px;
+    margin-right: 12%;
+  }
+
+  .posts > span > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 150px;
+    width: 350px;
+    margin-right: 8%;
+  }
+
+  .sidebar .blurb {
+    width: 44%;
+  }
 }
-	}
+
+@media screen and (max-width: 800px) {
+  .meta {
+    justify-content: center;
+  }
+
+  #wrapper > #header {
+    display: block;
+    margin-top: 8%;
+
+  }
+
+  #main .post {
+    width: 100%;
+  }
+
+  .post {
+    padding: 50px 0px 50px 0px;
+  }
+
+  .post .image {
+    margin: 0;
+  }
+
+  #main > .post .image img {
+    width: 100%;
+  }
+
+  .post > .paragraph {
+    font-size: 16px;
+  }
+
+  #sidebar {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .mini-post {
+    width: 100%;
+  }
+
+  .mini-post .image img {
+    width: 100%;
+  }
+
+  .mini-post > .header > .author {
+    margin-left: 335px;
+    margin-top: 10px;
+  }
 }
